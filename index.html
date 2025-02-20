@@ -49,19 +49,38 @@
                 <ul>
                     <li>
                         <h3>
-                            <a href="http://" target="_blank">
+                            <a
+                                href="https://revou-fundamental-course.github.io/30-sept-24-Rizaldi-R/"
+                                target="_blank"
+                            >
                                 Temperature Calculator
                             </a>
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
+                            A calculator that simplifies temperature conversions
+                            between Celsius, Fahrenheit, Kelvin, and Rankine
+                            scales.
                         </p>
                         <div>
-                            <p>Tech Stack</p>
-                            <img src="" alt="" />
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <p>Tech Stack:</p>
+                            <img
+                                src="./assets/images/html_5_logo.png"
+                                alt="html 5 logo"
+                                width="32"
+                                height="32"
+                            />
+                            <img
+                                src="./assets/images/css_logo.png"
+                                alt="css logo"
+                                width="32"
+                                height="32"
+                            />
+                            <img
+                                src="./assets/images/js_logo.png"
+                                alt="javascript logo"
+                                width="32"
+                                height="32"
+                            />
                         </div>
                     </li>
 
@@ -74,24 +93,56 @@
             <!-- 📁section: Contact Section -->
             <section>
                 <h2>Let's talk</h2>
-                <!-- 🎯todo: use a table -->
                 <form action="" method="post">
-                    <div>
-                        <label for="name">Your Name:</label>
-                        <input type="text" name="name" id="name" />
-                    </div>
+                    <!-- 🎯todo: use flexbox/grid in css instead of table -->
+                    <table>
+                        <tbody>
+                            <!-- 🗂️sub-section: Name -->
+                            <tr>
+                                <td>
+                                    <label for="name">Your Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="name" id="name" />
+                                </td>
+                            </tr>
 
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" />
-                    </div>
+                            <!-- 🗂️sub-section: Email -->
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                    />
+                                </td>
+                            </tr>
 
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
+                            <!-- 🗂️sub-section: Message -->
+                            <tr>
+                                <td>
+                                    <label for="message">Message:</label>
+                                </td>
+                                <td>
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                    ></textarea>
+                                </td>
+                            </tr>
 
-                    <input type="submit" value="Send" />
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Send" />
+                                    <input type="reset" value="Reset" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </form>
             </section>
         </main>
