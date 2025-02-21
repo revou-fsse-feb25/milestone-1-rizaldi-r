@@ -1,6 +1,6 @@
 
 # Rizaldi's Personal Website
-This repository powers my personal website and articles.
+This repository contains the source code for my personal website. The website provides a brief introduction about myself, showcases some of my projects, and includes a contact form for visitors to reach out.
 
 
 ## Features
