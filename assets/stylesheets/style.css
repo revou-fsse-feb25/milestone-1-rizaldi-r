@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour:BLED,SCAN@0..100,-53..100&display=swap');
+
+:root {
+    --font-size-root: 62.5%; /* 10px for easier rem calculation*/
+    --font-size-reguler: 1.6rem; /* actual font size */
+    --font-size-title: 5.2rem;
+    --main-color: #9684FF;
+    --main-bg-color: #1E1E1E;
+    --secondary-bg-color: #252238;
+    --dim-color: #999999;
+    --border-color: #616161;
+    --grayish-color: #3A484F;
+}
+
+/* remove default style */
+
+body, p {
+    margin: 0;
+}
+
+
+h1, h2 {
+    all: unset;
+    display: block;
+}
+
+/* apply new default style */
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Sixtyfour", sans-serif;
+    font-size: var(--font-size-root);
+    text-wrap: wrap;
+}
+
+body {
+    font-size: var( --font-size-reguler);
+    color: var(--main-color);
+    background: var(--main-bg-color);
+    line-height: 2.8rem;
+    margin-top: 2.8rem;
+
+}
+
+/* 🗃️section: Home Section */
+
+.home {
+    height: 100vh;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.home-title {
+    font-size: var(--font-size-title);
+    letter-spacing: -0.25rem;
+    line-height: 6.4rem;
+    width: 100vw;
+}
+
+.home-tagline {
+    
+}
+
+.home-loading {
+    margin: 5.2rem 0;
+}
+
+.home-text p {
+    margin: 1.2rem 0;
+}
+
+
