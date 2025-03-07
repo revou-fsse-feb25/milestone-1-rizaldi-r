@@ -94,7 +94,7 @@ input[type="text"], input[type="email"], textarea {
 }
 
 .btn:hover {
-    background-color: var(--color-secondary-bg);
+    background-color: #323f43;
 }
 
 .btn-active {
@@ -168,7 +168,6 @@ input[type="text"], input[type="email"], textarea {
     opacity: 0;
 }
 
-/* .navbar-bar-burger,  */
 .menu-toggler-label {
     cursor: pointer;
 }
@@ -283,13 +282,6 @@ body:has(.menu-toggler:checked) {
 .project {
     padding-bottom: var(--margin-btwn-sect);
     margin-left: var(--margin-left-sect);
-    /* background-image: url(/revou_se_full_stack/module_1/module_1_assignment/milestone-1-rizaldi-r/assets/images/temperature_calc_app.webp);
-    object-fit: contain;
-    max-width: fit-content;
-    background-position: bottom 7.2rem right 50%;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
 }
 
 .project::before {
@@ -300,13 +292,13 @@ body:has(.menu-toggler:checked) {
     width: 100%;
     height: 100%;
     border-radius: 1.8rem;
-    /* background-image: url(/revou_se_full_stack/module_1/module_1_assignment/milestone-1-rizaldi-r/assets/images/temperature_calc_app.webp); */
-    background-image: url(/assets/images/temperature_calc_app.webp);
+    background-image: url(https://res.cloudinary.com/dcjlqkkfv/image/upload/v1741348901/revo/temperature_calc_app_ix1pph.webp);
+    background-size: 100% auto;
     background-position: bottom 6.2rem right 50%;
-    filter: saturate(20%) blur(1.5px);
-    opacity: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    opacity: 50%;
+    filter: saturate(20%) blur(1.5px);
     padding-bottom: var(--margin-btwn-sect);
   }
 
@@ -368,11 +360,46 @@ body:has(.menu-toggler:checked) {
 
 .contact-socials a {
     display: block;
-    margin-left: margin;
+    width: fit-content;
+}
+
+.contact-socials span {
+    display: inline-block;
+    width: 100%;
+
 }
 
 .footer {
     color: var(--color-dim);
     margin-left: var(--margin-left-sect);
     margin-bottom: 5.5rem;
+}
+
+/* above 480 */
+@media only screen and (min-width: 480px){
+    .navbar .navbar-bar-burger {
+        padding: 1.2rem 2.8rem;
+    }
+
+    .home {
+        width: 55%;
+    }
+
+    .project-list {
+        width: 52rem;
+    }
+
+    .project::before { 
+        background-size: 80% auto;
+        background-position: bottom 6.2rem right 0.8rem;
+        padding: 0;
+    }
+
+    .contact-form {
+        width: 60vw;
+    }
+}
+
+/* above 768 */
+@media only screen and (max-width: 768px) {
 }
