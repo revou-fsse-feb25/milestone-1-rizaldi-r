@@ -1,30 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour:BLED,SCAN@0..100,-53..100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour:BLED,SCAN@0..100,-53..100&display=swap");
 
 :root {
     --font-size-root: 62.5%; /* 10px for easier rem calculation*/
     --font-size-reguler: 1.6rem; /* actual font size */
     --font-size-title: 5.2rem;
-    --main-color: #9684FF;
-    --main-bg-color: #1E1E1E;
-    --secondary-bg-color: #252238;
-    --dim-color: #999999;
-    --border-color: #616161;
-    --grayish-color: #3A484F;
+    --color-main: #9684ff;
+    --color-main-bg: #1e1e1e;
+    --color-secondary-bg: #252238;
+    --color-dim: #999999;
+    --color-border: #616161;
+    --color-grayish: #3a484f;
+    /* --color-navbar-blur: linear-gradient(#bd84f1a, #00000000); */
+    --color-navbar-blur-top: linear-gradient(#BD84FF1A, #00000000);
+    --color-navbar-blur-btm: linear-gradient(to top, #BD84FF1A, #00000000);
 }
 
-/* remove default style */
+/* --- remove default style --- */
 
 body, p {
     margin: 0;
 }
-
 
 h1, h2 {
     all: unset;
     display: block;
 }
 
-/* apply new default style */
+/* --- apply new default style ---*/
 
 html {
     scroll-behavior: smooth;
@@ -34,39 +36,117 @@ html {
 }
 
 body {
-    font-size: var( --font-size-reguler);
-    color: var(--main-color);
-    background: var(--main-bg-color);
+    font-size: var(--font-size-reguler);
+    color: var(--color-main);
+    background: var(--color-main-bg);
     line-height: 2.8rem;
     margin-top: 2.8rem;
+}
 
+/* --- utils --- */
+/* .w-95p-m-auto {
+    width: 95vw;
+    margin: 0 auto;
+} */
+
+/* --- 🗃️section: Navigation Bar --- */
+
+/* BUG: little gap at bottom */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--color-main-bg);
+}
+
+.navbar-bar {
+    display: flex;
+    height: 5.5rem;
+    font-size: 2.4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-bar span {
+    background-color: var(--color-main);
+    padding: 1.2rem 1.3rem;
+}
+
+.navbar-bar-empty {
+    width: 100%;
+    height: 50%;
+    margin: 0 0.8rem;
+}
+
+/* BUG: cant set width */
+.navbar-bar-burger {
+    width: 3rem;
+}
+
+.navbar-menu {
+    display: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    background-color: var(--color-main);
+    height: 27.6rem;
+    width: 34.2rem;
+    padding: 0.8rem 0 3.2rem 0;
+    margin-bottom: 0.8rem;
+    margin-left: auto;
+}
+
+.navbar-menu li {
+    text-decoration: none;
+    margin-left: 2.0rem;
+    margin-top: 1.6rem;
+}
+
+.navbar-menu li a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--color-main-bg);
+}
+
+.navbar-blur div {
+    position: fixed;
+    height: 8.8rem;
+    width: 100%;
+}
+
+.navbar-blur-top {
+    top: 0;
+    background: var(--color-navbar-blur-top);
+    backdrop-filter: blur(2.5px);
+}
+
+.navbar-blur-btm {
+    bottom: 0;
+    background: var(--color-navbar-blur-btm);
+    backdrop-filter: blur(1px);
 }
 
 /* 🗃️section: Home Section */
 
 .home {
+    margin-left: 1.2rem;
     height: 100vh;
-    width: 95vw;
-    margin: 0 auto;
 }
 
 .home-title {
     font-size: var(--font-size-title);
     letter-spacing: -0.25rem;
     line-height: 6.4rem;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
-.home-tagline {
-    
-}
+/* .home-tagline {
+
+} */
 
 .home-loading {
-    margin: 5.2rem 0;
+    margin: 4.2rem 0;
 }
 
 .home-text p {
     margin: 1.2rem 0;
 }
-
-

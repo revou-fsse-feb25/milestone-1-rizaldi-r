@@ -2,7 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1"
+        />
         <meta
             name="title"
             content="Muhammad Rizaldi Ramli - Aspiring Fullstack Developer"
@@ -49,14 +52,25 @@
     </head>
     <body>
         <header>
-            <!-- <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <!-- 🗃️section: Navigation Bar -->
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <li><a href="#home">> HOME</a></li>
+                    <li><a href="#about">> ABOUT</a></li>
+                    <li><a href="#project">> PROJECT</a></li>
+                    <li><a href="#contact">> CONTACT</a></li>
                 </ul>
-            </nav> -->
+                <div class="navbar-bar">
+                    <span class="navbar-bar-logo">zal.</span>
+                    <span class="navbar-bar-empty"></span>
+                    <span class="navbar-bar-burger">▧</span>
+                </div>
+            </nav>
+
+            <div class="navbar-blur">
+                <div class="navbar-blur-top"></div>
+                <div class="navbar-blur-btm"></div>
+            </div>
         </header>
 
         <main>
@@ -67,17 +81,17 @@
                     <h1>Rizaldi R.</h1>
                     <p>~~~~~~~</p>
                 </div>
-                
+
                 <h2 class="home-tagline">Aspiring Fullstack Developer</h2>
                 <p class="home-loading">[██~~~~~~~~] 20%</p>
 
                 <div class="home-text">
                     <p>
-                        > Hi there! I'm Rizal, eager to bring creative ideas to life
-                        through code.
+                        > Hi there! I'm Rizal, eager to bring creative ideas to
+                        life through code.
                     </p>
                     <p>> Scroll to continue...</p>
-                    <p>> █</p>
+                    <span>█</span>
                 </div>
             </section>
 
@@ -85,16 +99,20 @@
 
             <!-- 🗃️section: About Me Section -->
             <section id="about">
-                <h2>About Me</h2>
+                <h2>Where it all began...</h2>
                 <p>
-                    I've always been drawn to the creative possibilities of
+                    > I've always been drawn to the creative possibilities of
                     technology. My journey began when I started delving into the
-                    exciting realm of game development. It was during this time
-                    that I discovered my true passion: crafting digital
-                    experiences through code. Now, I'm dedicated to expanding my
-                    knowledge and skills in web development, ready to build
-                    innovative and engaging web experiences!
+                    exciting realm of game development.
                 </p>
+                <p>
+                    > It was during this time that I discovered my true passion:
+                    crafting digital experiences through code. Now, I'm
+                    dedicated to expanding my knowledge and skills in web
+                    development, ready to build innovative and engaging web
+                    experiences!
+                </p>
+                <span>█</span>
             </section>
 
             <hr />
