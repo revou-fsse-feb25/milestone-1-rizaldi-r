@@ -55,21 +55,26 @@
             <!-- 🗃️section: Navigation Bar -->
             <nav class="navbar">
                 <ul class="navbar-menu">
-                    <li><a href="#home">> HOME</a></li>
-                    <li><a href="#about">> ABOUT</a></li>
-                    <li><a href="#project">> PROJECT</a></li>
-                    <li><a href="#contact">> CONTACT</a></li>
+                    <li class="hover-right"><a href="#home">> HOME</a></li>
+                    <li class="hover-right"><a href="#about">> ABOUT</a></li>
+                    <li class="hover-right"><a href="#project">> PROJECT</a></li>
+                    <li class="hover-right"><a href="#contact">> CONTACT</a></li>
                 </ul>
                 <div class="navbar-bar">
                     <span class="navbar-bar-logo">zal.</span>
                     <span class="navbar-bar-empty"></span>
-                    <span class="navbar-bar-burger">▧</span>
+                    <!-- <span class="navbar-bar-burger">▧</span> -->
+                    <span class="navbar-bar-burger">
+                        <label class="menu-toggler-label" for="menu-toggler">▧</label>
+                        <input class="menu-toggler" id="menu-toggler" type="checkbox">
+                    </span>
                 </div>
+                
             </nav>
 
             <div class="navbar-blur">
                 <div class="navbar-blur-top"></div>
-                <div class="navbar-blur-btm"></div>
+                <!-- <div class="navbar-blur-btm"></div> -->
             </div>
         </header>
 
@@ -91,7 +96,7 @@
                         life through code.
                     </p>
                     <p>> Scroll to continue...</p>
-                    <span>█</span>
+                    <p>> <span class="cursor-anim">█</span></p>
                 </div>
             </section>
 
@@ -114,7 +119,7 @@
                     <img
                         class="about-img"
                         src="./assets/images/godot_shader.webp"
-                        alt=""
+                        alt="godot shader editor"
                         width="343"
                     />
                 </div>
@@ -130,93 +135,102 @@
                         I'm dedicated to expanding my knowledge and skills in
                         web development, ready to build innovative and engaging
                         web experiences!
-                        <span>█</span>
+                        <span class="cursor-anim">█</span>
                     </p>
                 </div>
             </section>
 
             <!-- 🗃️section: Project Section -->
-            <section id="project">
+            <section id="project" class="project">
                 <h2>Things I've Made...</h2>
-                <button class="projc-btn">APPS</button>
-                <button class="projc-btn">GAMES</button>
-                <ul>
+
+                <div class="project-btns">
+                    <input
+                        id="apps"
+                        type="radio"
+                        name="project-option"
+                        value="apps"
+                    />
+                    <label class="btn-active" for="apps">APPS</label>
+
+                    <input
+                        id="games"
+                        type="radio"
+                        name="project-option"
+                        value="games"
+                    />
+                    <label class="btn" for="games">GAMES</label>
+                </div>
+
+                <ul class="project-list">
                     <!-- 🗂️sub-section: Project 1 -->
                     <li>
-                        <h3>
+                        <h3 class="hover-right">
                             <a
                                 href="https://revou-fundamental-course.github.io/30-sept-24-Rizaldi-R/"
                                 target="_blank"
                             >
-                                >> Productive YT
+                                >> Productive YT (WIP)
                             </a>
                         </h3>
-                        <p>
-                            > Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </p>
-                        <div>
-                            <span>> Tech Stack:</span>
-                            <img
-                                src="./assets/images/html_logo.webp"
-                                alt="html 5 logo"
-                                width="32"
-                                height="32"
-                            />
-                            <img
-                                src="./assets/images/css_logo.webp"
-                                alt="css logo"
-                                width="32"
-                                height="32"
-                            />
-                            <img
-                                src="./assets/images/js_logo.webp"
-                                alt="javascript logo"
-                                width="32"
-                                height="32"
-                            />
+                        <div class="project-desc">
+                            <p>
+                                > Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <p>> Tech Stack:</p>
+                            <div class="project-desc-tech">
+                                <img
+                                    src="./assets/images/html_logo.webp"
+                                    alt="html 5 logo"
+                                />
+                                <img
+                                    src="./assets/images/css_logo.webp"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/js_logo.webp"
+                                    alt="javascript logo"
+                                />
+                            </div>
                         </div>
                     </li>
                     <!-- 🗂️sub-section: Project 2 -->
                     <li>
-                        <h3>
+                        <h3 class="hover-right">
                             <a
                                 href="https://revou-fundamental-course.github.io/30-sept-24-Rizaldi-R/"
                                 target="_blank"
                             >
-                                >> Ratecamp
+                                >> Ratecamp (WIP)
                             </a>
                         </h3>
-                        <p>
-                            > Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Alias fugit repellendus illo, ut, esse, id
-                            molestias officiis.
-                        </p>
-                        <div>
-                            <span>> Tech Stack:</span>
-                            <img
-                                src="./assets/images/html_logo.webp"
-                                alt="html 5 logo"
-                                width="32"
-                                height="32"
-                            />
-                            <img
-                                src="./assets/images/css_logo.webp"
-                                alt="css logo"
-                                width="32"
-                                height="32"
-                            />
-                            <img
-                                src="./assets/images/js_logo.webp"
-                                alt="javascript logo"
-                                width="32"
-                                height="32"
-                            />
+                        <div class="project-desc">
+                            <p>
+                                > Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Alias fugit repellendus illo,
+                                ut, esse, id molestias officiis.
+                            </p>
+                            <p>> Tech Stack:</p>
+                            <div class="project-desc-tech">
+                                <img
+                                    src="./assets/images/html_logo.webp"
+                                    alt="html 5 logo"
+                                />
+                                <img
+                                    src="./assets/images/css_logo.webp"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/js_logo.webp"
+                                    alt="javascript logo"
+                                />
+                            </div>
                         </div>
                     </li>
                     <!-- 🗂️sub-section: Project 3 -->
                     <li>
-                        <h3>
+                        <h3 class="hover-right">
                             <a
                                 href="https://revou-fundamental-course.github.io/30-sept-24-Rizaldi-R/"
                                 target="_blank"
@@ -224,141 +238,90 @@
                                 >> Temperature Calculator
                             </a>
                         </h3>
-                        <p>
-                            > A calculator that simplifies temperature conversions
-                            between Celsius, Fahrenheit, Kelvin, and Rankine
-                            scales.
-                        </p>
-                        <div>
-                            <span> Tech Stack:</span>
-                            <img
-                                src="./assets/images/html_logo.webp"
-                                alt="html 5 logo"
-                                width="32"
-                                height="32"
-                            />
-                            <img
-                                src="./assets/images/css_logo.webp"
-                                alt="css logo"
-                                width="32"
-                                height="32"
-                            />
-                            <img
-                                src="./assets/images/js_logo.webp"
-                                alt="javascript logo"
-                                width="32"
-                                height="32"
-                            />
+                        <div class="project-desc">
+                            <p>
+                                > A calculator that simplifies temperature
+                                conversions between Celsius, Fahrenheit, Kelvin,
+                                and Rankine scales.
+                            </p>
+                            <p>> Tech Stack:</p>
+                            <div class="project-desc-tech">
+                                <img
+                                    src="./assets/images/html_logo.webp"
+                                    alt="html 5 logo"
+                                />
+                                <img
+                                    src="./assets/images/css_logo.webp"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/js_logo.webp"
+                                    alt="javascript logo"
+                                />
+                            </div>
                         </div>
                     </li>
                 </ul>
             </section>
 
-            <hr />
-
             <!-- 🗃️section: Contact Section -->
-            <section id="contact">
-                <h2>Let's talk</h2>
-                <form action="" method="post">
-                    <!-- 🎯todo: use flexbox/grid in css instead of table -->
-                    <table>
-                        <tbody>
-                            <!-- 🗂️sub-section: Name -->
-                            <tr>
-                                <td>
-                                    <label for="name">Name:</label>
-                                </td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Enter your name"
-                                        required
-                                    />
-                                </td>
-                            </tr>
+            <section id="contact" class="contact">
+                <h2>Let's Connect <span>*</span></h2>
+                <form action="" method="post" class="contact-form">
+                    <!-- 🗂️sub-section: Name -->
+                    <label for="name">> Name :</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    />
 
-                            <!-- 🗂️sub-section: Email -->
-                            <tr>
-                                <td>
-                                    <label for="email">Email:</label>
-                                </td>
-                                <td>
-                                    <input
-                                        id="email"
-                                        type="email"
-                                        name="email"
-                                        placeholder="Enter your email"
-                                        required
-                                    />
-                                </td>
-                            </tr>
+                    <!-- 🗂️sub-section: Email -->
+                    <label for="email">> Email :</label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    />
 
-                            <!-- 🗂️sub-section: Message -->
-                            <tr>
-                                <td>
-                                    <label for="message">Message:</label>
-                                </td>
-                                <td>
-                                    <textarea
-                                        name="message"
-                                        id="message"
-                                        placeholder="Share your thoughts"
-                                        required
-                                    ></textarea>
-                                </td>
-                            </tr>
+                    <!-- 🗂️sub-section: Message -->
+                    <label for="message">> Message :</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Share your thoughts"
+                        required
+                    ></textarea>
 
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <input type="submit" value="Send" />
-                                    <input type="reset" value="Reset" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <input type="submit" class="btn" value="Send" />
+                    <input type="reset" class="btn" value="Reset" />
                 </form>
 
                 <!-- 🗂️sub-section: Social -->
-                <p>You can also find me on:</p>
-                <a target="_blank" href="mailto:m.rizaldi.ramli@gmail.com">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                            fill="#24292f"
-                        />
-                    </svg>
-                    email
-                </a>
-                <a target="_blank" href="https://github.com/rizaldi-r">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 100 100"
-                    >
-                        <path
-                            d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-                            fill="#24292f"
-                        />
-                    </svg>
-                    github
-                </a>
+                <div class="contact-socials">
+                    <p>>> Socials :</p>
+                    <a class="hover-right" target="_blank" href="mailto:m.rizaldi.ramli@gmail.com">
+                        > Email
+                    </a>
+                    <a class="hover-right" target="_blank" href="https://github.com/rizaldi-r">
+                        > Github
+                    </a>
+                    <a class="hover-right" target="_blank" href="https://www.instagram.com/">
+                        > Instagram
+                    </a>
+                    <a class="hover-right" target="_blank" href="https://www.pinterest.com/">
+                        > Pinterest
+                    </a>
+                </div>
             </section>
         </main>
 
-        <br />
-        <hr />
-
-        <footer>
-            <p>Copyright 2025 &copy; Muhammad Rizaldi Ramli</p>
+        <footer class="footer">
+            <p>&copy; Muhammad Rizaldi Ramli 2025</p>
         </footer>
     </body>
 </html>
