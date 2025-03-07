@@ -251,7 +251,7 @@ body:has(.menu-toggler:checked) {
     margin-bottom: var(--margin-btwn-sect);
 }
 
-.about-img-container {
+.about-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -291,7 +291,7 @@ body:has(.menu-toggler:checked) {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 2.8rem;
+    border-radius: 1.8rem;
     background-image: url(https://res.cloudinary.com/dcjlqkkfv/image/upload/v1741348901/revo/temperature_calc_app_ix1pph.webp);
     background-size: 100% auto;
     background-position: bottom 6.2rem right 50%;
@@ -386,15 +386,13 @@ body:has(.menu-toggler:checked) {
     }
 
     .project-list {
-        width: 60%;
+        width: 52rem;
     }
 
-    /* claculate based on width */
     .project::before { 
-        background-size: 70% auto;
+        background-size: 80% auto;
         background-position: bottom 6.2rem right 0.8rem;
         padding: 0;
-        /* height: calc(100vw); */
     }
 
     .contact-form {
