@@ -300,7 +300,8 @@ body:has(.menu-toggler:checked) {
     width: 100%;
     height: 100%;
     border-radius: 1.8rem;
-    background-image: url(/revou_se_full_stack/module_1/module_1_assignment/milestone-1-rizaldi-r/assets/images/temperature_calc_app.webp);
+    /* background-image: url(/revou_se_full_stack/module_1/module_1_assignment/milestone-1-rizaldi-r/assets/images/temperature_calc_app.webp); */
+    background-image: url(/assets/images/temperature_calc_app.webp);
     background-position: bottom 6.2rem right 50%;
     filter: saturate(20%) blur(1.5px);
     opacity: 50%;
